@@ -9,7 +9,8 @@ const Truth = () => {
     const navigate = useNavigate();
 
     const truthQuestions = [
-        "What is your biggest fear?",
+        "Apke name me kitna letter h?😅",
+        "sbse bada dar?",
         "What’s the most embarrassing thing you’ve ever done?",
         "Who was your first crush?",
         "What’s a secret you’ve never told anyone?",
@@ -20,7 +21,8 @@ const Truth = () => {
         "Frequency of crying?",
         "What’s the most ridiculous thing you’ve cried over?",
         "What’s your favorite childhood memory?",
-        "when u will accept my proposal"
+        "when u will accept my proposal",
+        "Apko gf bnane ka step1"
     ];
 
     const handleNewQuestion = async () => {
