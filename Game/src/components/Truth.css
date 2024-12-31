@@ -1,0 +1,156 @@
+/* Reset styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .truth-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    padding: 20px;
+  }
+  
+  .truth-container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .truth-title {
+    font-size: 2.5rem;
+    color: #e94560;
+    margin-bottom: 20px;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  .question-box {
+    margin-bottom: 20px;
+  }
+  
+  .generate-btn {
+    background-color: #e94560;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .generate-btn:hover {
+    background-color: #ff5773;
+  }
+  
+  .answer-section {
+    margin-top: 20px;
+  }
+  
+  .answer-box {
+    width: 100%;
+    height: 80px;
+    background-color: #16213e;
+    color: white;
+    border: 1px solid #e94560;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    resize: none;
+    outline: none;
+  }
+  
+  .answer-box::placeholder {
+    color: #b3b3b3;
+  }
+  
+  .send-btn {
+    background-color: #1f4068;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .send-btn:disabled {
+    background-color: #444;
+    cursor: not-allowed;
+  }
+  
+  .send-btn:hover:enabled {
+    background-color: #2a5298;
+  }
+  
+  .back-btn {
+    margin-top: 20px;
+    background-color: #16213e;
+    color: #e94560;
+    padding: 10px 20px;
+    border: 1px solid #e94560;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .back-btn:hover {
+    background-color: #e94560;
+    color: white;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .truth-title {
+      font-size: 2rem;
+    }
+  
+    .generate-btn, .send-btn, .back-btn {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  
+    .answer-box {
+      height: 70px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .truth-container {
+      padding: 15px;
+    }
+  
+    .truth-title {
+      font-size: 1.8rem;
+    }
+  
+    .generate-btn, .send-btn, .back-btn {
+      font-size: 0.8rem;
+      padding: 7px 10px;
+    }
+  
+    .answer-box {
+      height: 60px;
+      font-size: 0.8rem;
+    }
+  }
+  
