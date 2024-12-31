@@ -41,7 +41,7 @@ const Truth = () => {
 
     const handleSendEmail = async () => {
         try {
-            await axios.post("http://localhost:5000/send-email", {
+            await axios.post("https://truth-or-dare-530r.onrender.com/send-email", {
                 question,
                 answer,
             });
